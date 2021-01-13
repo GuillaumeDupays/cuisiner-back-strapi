@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recette-categories",
+      "handler": "recette-categorie.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recette-categories/count",
+      "handler": "recette-categorie.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recette-categories/:id",
+      "handler": "recette-categorie.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recette-categories",
+      "handler": "recette-categorie.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recette-categories/:id",
+      "handler": "recette-categorie.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recette-categories/:id",
+      "handler": "recette-categorie.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

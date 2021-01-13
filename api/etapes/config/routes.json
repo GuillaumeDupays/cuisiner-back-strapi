@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/etapes",
+      "handler": "etapes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/etapes/count",
+      "handler": "etapes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/etapes/:id",
+      "handler": "etapes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/etapes",
+      "handler": "etapes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/etapes/:id",
+      "handler": "etapes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/etapes/:id",
+      "handler": "etapes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

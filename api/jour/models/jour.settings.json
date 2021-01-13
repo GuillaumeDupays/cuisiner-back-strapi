@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jours",
+  "info": {
+    "name": "jour"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nomJour": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

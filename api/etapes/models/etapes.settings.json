@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etapes",
+  "info": {
+    "name": "etape"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "numEtape": {
+      "type": "integer"
+    },
+    "recette": {
+      "via": "etapes",
+      "model": "recette"
+    }
+  }
+}

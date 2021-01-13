@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aliments",
+  "info": {
+    "name": "aliment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nomProduit": {
+      "type": "string"
+    },
+    "poids": {
+      "type": "integer"
+    },
+    "categorie": {
+      "model": "categorie"
+    },
+    "recette": {
+      "model": "recette",
+      "via": "aliments"
+    },
+    "uniteMesure": {
+      "type": "string"
+    }
+  }
+}

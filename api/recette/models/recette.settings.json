@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recettes",
+  "info": {
+    "name": "recette"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nomRecette": {
+      "type": "string"
+    },
+    "aliments": {
+      "via": "recette",
+      "collection": "aliment"
+    },
+    "recette_categorie": {
+      "model": "recette-categorie"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "etapes": {
+      "collection": "etapes",
+      "via": "recette"
+    }
+  }
+}
